@@ -1,6 +1,6 @@
 namespace Payment.Domain.Enums
 {
-    public enum EDocumentType
+    public enum DocumentType
     {
         Invalid =0,
         CPF = 1,

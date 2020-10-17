@@ -10,7 +10,9 @@ namespace Payment.Domain.Test
         public void NewPayment()
         {
             // var payment = new Payment("email@email.com");
-            var payment = new PaymentMethod(new Email("email@email.com"), "12345678912");
+            var payment = new PaymentMethod("email@email.com", "12345678912");
+            Console.WriteLine(payment.Document);
+            Console.WriteLine(payment.Email);
         }
     }
 }

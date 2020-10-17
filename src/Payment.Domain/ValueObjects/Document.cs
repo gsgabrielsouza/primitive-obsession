@@ -9,6 +9,7 @@ namespace Payment.Domain.ValueObjects
         {
             Number = number;
             DocumentType = DocumentType.Invalid;
+            IsValid(number);
         }
 
         public TaxDocument(string number, DocumentType documentType) : this(number)
@@ -23,7 +24,7 @@ namespace Payment.Domain.ValueObjects
         private void IsValid(string input)
         {
             // generic exception
-            if (input.Length < 13)
+            if (input.Length > 12)
                 throw new Exception("generic exception");
         }
     }

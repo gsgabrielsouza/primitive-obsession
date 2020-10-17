@@ -5,9 +5,10 @@ namespace Payment.Domain
 {
     public class PaymentMethod
     {
-        public PaymentMethod(Email email)
+        public PaymentMethod(Email email, Document document)
         {
             Email = email;
+            Document = document;
         }
         public DateTime PaidDate { get; private set; }
         public Document Document { get; private set; }

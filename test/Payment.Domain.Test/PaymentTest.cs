@@ -1,4 +1,5 @@
 using System;
+using Payment.Domain.ValueObjects;
 using Xunit;
 
 namespace Payment.Domain.Test
@@ -9,6 +10,7 @@ namespace Payment.Domain.Test
         public void NewPayment()
         {
             // var payment = new Payment("email@email.com");
+            var payment = new PaymentMethod(new Email("email@email.com"), "12345678912");
         }
     }
 }

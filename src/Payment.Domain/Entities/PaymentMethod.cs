@@ -1,16 +1,15 @@
+using System;
 using Payment.Domain.ValueObjects;
 
-namespace Payment.Domain.Entities
+namespace Payment.Domain
 {
-    public class Student
+    public class PaymentMethod
     {
-        public Student(Name name,Document document, Email email)
+        public PaymentMethod(Email email)
         {
             Email = email;
-            Name = name;
         }
-
-        public Name Name { get; private set; }
+        public DateTime PaidDate { get; private set; }
         public Document Document { get; private set; }
         public Email Email { get; private set; }
     }

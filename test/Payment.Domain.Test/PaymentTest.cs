@@ -8,7 +8,7 @@ namespace Payment.Domain.Test
         [Fact]
         public void NewPayment()
         {
-
+            // var payment = new Payment("email@email.com");
         }
     }
 }
